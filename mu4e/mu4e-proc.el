@@ -529,7 +529,7 @@ result will be delivered to the function registered as
 
 (defun mu4e~proc-remove (docid)
   "Remove message identified by docid.
-The results are reporter through either (:update ... ) or (:error)
+The results are reported through either (:update ... ) or (:error)
 sexp, which are handled my `mu4e-error-func', respectively."
   (mu4e~proc-send-command "cmd:remove docid:%d" docid))
 
